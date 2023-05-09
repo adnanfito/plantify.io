@@ -492,6 +492,26 @@ footer {
     font-size: 55%;
   }
 
+  .navbar {
+    width: 100vmin;
+    padding: 0 3%;
+  }
+
+  .navbar .navbar-logo a img {
+    width: 20px;
+  }
+
+  .navbar .navbar-logo a {
+    font-size: 0.7rem;
+  }
+
+  .navbar-nav a {
+    display: inline-block;
+    font-weight: 550;
+    font-size: 0.8rem;
+    margin: 0 0.7rem;
+  }
+
   .grid {
     margin: 2rem 5rem;
     display: grid;
