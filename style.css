@@ -30,6 +30,12 @@ body {
   z-index: 99;
 }
 
+.navbar-nav a,
+.navbar-extra a {
+  text-decoration: none;
+  color: #464545;
+}
+
 .navbar .navbar-logo {
   width: 105px;
   display: flex;
@@ -98,7 +104,7 @@ body {
 }
 
 .hero {
-  background-image: url(/images/jumbotron.png);
+  background-image: url(images/jumbotron.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
