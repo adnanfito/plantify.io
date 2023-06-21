@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/payment-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Sweet Alert -->
+    <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,600&display=swap" rel="stylesheet" />
+    <title>Authentication</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="split left">
+        <div class="top-list">
+          <ul>
+            <li class="top-list-cart"><a href="cart.html">Cart</a><i class="fa-solid fa-arrow-right" style="color: #000000"></i></li>
+            <li><a href="payment-detail.html">Details </a><i class="fa-solid fa-arrow-right" style="color: #000000"></i></li>
+            <li><a href="shipping.html">Shipping </a><i class="fa-solid fa-arrow-right" style="color: #000000"></i></li>
+            <li><a href="popup.html">Payment </a></li>
+          </ul>
+        </div>
+        <div class="centered">
+          <form action="" method="post">
+            <!-- bagian main item -->
+            <h1 class="header-contact">Contact</h1>
+            <div class="input-field">
+              <label for="email"></label>
+              <input type="email" class="form-control" placeholder="Email or mobile phone number" id="email" placeholder="" required autocomplete="off" />
+            </div>
+            <div class="container-remember"><input type="checkbox" /> Add me to Plantify newsletter for a 10% discount</div>
+            <h1 class="header-shipping">Shipping Address</h1>
+            <!-- bagian name -->
+
+            <div class="input-field-name">
+              <label for="fname"></label>
+              <input type="text" class="form-control" placeholder="First Name" id="fname" required autocomplete="off" />
+              <!-- second name  -->
+              <label for="lname"></label>
+              <input type="text" class="form-control" placeholder="Last Name" id="lname" required autocomplete="off" />
+            </div>
+            <div class="input-field">
+              <label for="address"></label>
+              <input type="text" class="form-control" placeholder="Add address" id="address" placeholder="" required autocomplete="off" />
+            </div>
+            <div class="input-field">
+              <label for="number"></label>
+              <input type="text" class="form-control" placeholder="Add number" id="number" placeholder="" required autocomplete="off" />
+            </div>
+            <div class="input-field">
+              <label for="n-shipping"></label>
+              <input type="text" class="form-control" placeholder="Shipping note (Optional)" id="n-shipping" placeholder="" required autocomplete="off" />
+            </div>
+
+            <!-- begin address -->
+            <div class="input-field-address">
+              <label for="city"></label>
+              <input type="text" class="form-control" placeholder="City" id="city" required autocomplete="off" />
+              <!-- end bagian address -->
+              <!-- begin postal code -->
+              <label for="postalc"></label>
+              <input type="text" class="form-control" placeholder="Postal Code" id="postalc" required autocomplete="off" />
+              <!-- end postal code -->
+              <!-- begin province -->
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Province</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <!-- end province -->
+              <div class="input-field-region">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Country / Region</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="back-button">
+                <a href="cart.html">Back to cart</a>
+                <button type="button" class="btn btn-success" id="btn">Go to shipping</button>
+                <script>
+                  function myfunction() {
+                    window.location.href = 'shipping.html';
+                  }
+                  document.getElementById('btn').onclick = function () {
+                    setTimeout(myfunction, 0);
+                  };
+                </script>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end bagian main item -->
+
+        <div class="split right">
+          <div class="content">
+            <div class="item-content">
+              <table>
+                <tr>
+                  <td class="image-plant"><img src="images/products/1.jpg" class="img" alt="Calathea Dottie" style="border-radius: 1rem; margin: 1rem 0 0 1rem" /></td>
+                  <td class="text-item">
+                    <p>Calathea Dottie®</p>
+                    <p class="price">$ 9.99</p>
+                  </td>
+                </tr>
+              </table>
+              <div class="horizontal-line">
+                <hr />
+              </div>
+              <table class="final-payment">
+                <tr>
+                  <td class="subtotal">Subtotal</td>
+                  <td class="total">$ 9.99</td>
+                </tr>
+                <tr>
+                  <td class="subtotal">Shipping</td>
+                  <td class="total">Calculated at the next step</td>
+                </tr>
+                <tr>
+                  <td class="subtotal">Total</td>
+                  <td class="all-total">$ 9.99</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js
+"></script>
+</html>

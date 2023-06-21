@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plantify | Detail Product</title>
+    <!-- Boostrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="home.html"><img src="images/logo/Plantify Logo.png" alt="" /></a>
+        <a href="home.html" class="text-logo">Plantify</a>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="home.html#menu">Products</a>
+        <a href="home.html#about" id="">About</a>
+        <a href="home.html#contact">Testimonials</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="profile"><i class="bi bi-person"></i></a>
+        <a href="cart.html" id="shopping-cart"><i class="bi bi-cart3"></i></a>
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Main -->
+    <section class="main">
+      <div class="left-main">
+        <img class="product-img" src="images/products/1.jpg" alt="" />
+      </div>
+      <div class="right-main">
+        <div class="header-product">
+          <h2 class="product-name">Monstera tera tera</h2>
+          <h2 class="product-price">$25.00</h2>
+          <div class="header-line"></div>
+        </div>
+        <form action="cart.html">
+          <div class="side-container">
+            <div class="side-left">
+              <h3 class="qty-text">Quantity</h3>
+              <input class="qty-btn" type="number" min="0" />
+            </div>
+            <div class="side-right">
+              <p class="desc">
+                If you want an easy-care houseplant that will push out trailing vines and attract all kinds of attention, then the Hoya Speckled Pubicalyx is for you. This wax plant has green leaves that feature specs of white.
+              </p>
+              <!-- <input type="submit" value="+ Add to Cart" class="cart-btn" /> -->
+              <button type="submit" class="cart-btn"><i class="bi bi-cart3"></i> + Add to Cart</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-line">
+        <hr />
+      </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-col-logo">
+            <div class="footer-logo">
+              <div class="footer-logo-img">
+                <a href="#"><img src="images/logo/Plantify Transparan.png" alt="" /></a>
+                <a href="#">Plantify</a>
+              </div>
+              <p class="footer-logo-text">Your natural candle made for your home and for your wellness.</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">Products</a></p>
+              <p><a href="#">New season</a></p>
+              <p><a href="#">Most Searched</a></p>
+              <p><a href="#">Most Selled</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">About</a></p>
+              <p><a href="#">Help</a></p>
+              <p><a href="#">Shipping</a></p>
+              <p><a href="#">Affiliate</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">Info</a></p>
+              <p><a href="#">Contact us</a></p>
+              <p><a href="#">Privacy Policies</a></p>
+              <p><a href="#">Terms & Conditions</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/detail.js"></script>
+  </body>
+</html>

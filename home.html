@@ -13,7 +13,7 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <!-- Icon -->
   </head>
 
@@ -21,34 +21,32 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-logo">
-        <a href="#"><img src="images/logo/Plantify Logo.png" alt="" /></a>
-        <a href="#" class="text-logo">Plantify</a>
+        <a href="home.html#home"><img src="images/logo/Plantify Logo.png" alt="" /></a>
+        <a href="home.html#home" class="text-logo">Plantify</a>
       </div>
 
       <div class="navbar-nav">
         <a href="#menu">Products</a>
         <a href="#about" id="">About</a>
-        <a href="#contact">Contact us</a>
+        <a href="#contact">Testimonials</a>
       </div>
 
       <div class="navbar-extra">
         <a href="#" id="profile"><i class="bi bi-person"></i></a>
-        <a href="#" id="shopping-cart"><i class="bi bi-cart3"></i></a>
+        <a href="cart.html" id="shopping-cart"><i class="bi bi-cart3"></i></a>
         <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
       </div>
     </nav>
     <!-- End Navbar -->
 
-    <!--  -->
-
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" style="background-image: url(images/jumbotron.png)" id="home">
       <main class="content">
         <div class="fill-logo">
           <h1>🌱</h1>
           <h1>Premium Plants</h1>
           <p>Flowers always make people better, happier and more helpful, they are sunshine, food and medicine for the soul</p>
-          <a href="#product" class="cta">Discovery our collection</a>
+          <a href="products.html" class="cta">Discovery our collection</a>
         </div>
       </main>
     </section>
@@ -59,15 +57,17 @@
       <h2>Products</h2>
       <p>Order it for you of for your beloved ones</p>
       <div class="grid">
-        <div class="grid-item">
-          <div class="card">
-            <img class="card-img" src="images/products/1.jpg" alt="" />
-            <div class="card-content">
-              <h3 class="card-header">Monstera delicious</h3>
-              <p class="card-price">$ 25.00</p>
+        <a href="detail.html" class="product-card">
+          <div class="grid-item">
+            <div class="card">
+              <img class="card-img" src="images/products/1.jpg" alt="" />
+              <div class="card-content">
+                <h3 class="card-header">Monstera delicious</h3>
+                <p class="card-price">$ 25.00</p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <div class="grid-item">
           <div class="card">
             <img class="card-img" src="images/products/2.jpg" alt="" />
@@ -132,11 +132,14 @@
           </div>
         </div>
       </div>
+      <div class="show-product">
+        <a href="./products.html">Show All Products</a>
+      </div>
     </section>
     <!-- End Products -->
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
       <h3 class="about-header">About</h3>
       <p class="about-content">Order now and appreciate the beauty of nature</p>
       <div class="about-main">
@@ -172,7 +175,7 @@
     <!-- End About -->
 
     <!-- Start Testimonial -->
-    <section class="testimonial">
+    <section class="testimonial" id="contact">
       <h3 class="testi-header">Testimonials</h3>
       <p class="testi-text">Some quotes from our happy customers</p>
       <div class="row-testi">
@@ -181,13 +184,13 @@
             <img src="images/testimonials/tahta.jpg" class="testi-img" alt="tahta" />
             <div class="star-icon">
               <i class="fa-solid fa-star" style="color: #56b280"></i>
-              <i class="fa-solid fa-star" style="color: #56b280"></i>
-              <i class="fa-solid fa-star" style="color: #56b280"></i>
-              <i class="fa-solid fa-star" style="color: #56b280"></i>
-              <i class="fa-solid fa-star" style="color: #56b280"></i>
+              <i class="fa-regular fa-star" style="color: #56b280"></i>
+              <i class="fa-regular fa-star" style="color: #56b280"></i>
+              <i class="fa-regular fa-star" style="color: #56b280"></i>
+              <i class="fa-regular fa-star" style="color: #56b280"></i>
             </div>
             <div class="user-content">
-              <h4 class="user-text">"Wow keren sekali bang"</h4>
+              <h4 class="user-text">"Tidak ada warna biru!!😡"</h4>
               <p class="user-name">Tahta</p>
             </div>
           </div>
@@ -203,7 +206,7 @@
               <i class="fa-solid fa-star" style="color: #56b280"></i>
             </div>
             <div class="user-content">
-              <h4 class="user-text">"Baiklah bagus sekali memang"</h4>
+              <h4 class="user-text">"Pak Yogiek sangat baik"</h4>
               <p class="user-name">Adnan</p>
             </div>
           </div>
@@ -235,7 +238,7 @@
               <i class="fa-solid fa-star" style="color: #56b280"></i>
             </div>
             <div class="user-content">
-              <h4 class="user-text">"Sangat bagus banh"</h4>
+              <h4 class="user-text">"Waduh😁😁"</h4>
               <p class="user-name">Cobust</p>
             </div>
           </div>
@@ -288,6 +291,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script src="script.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>

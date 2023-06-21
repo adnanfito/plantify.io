@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plantify</title>
+    <!-- Boostrap 5 Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- Icon -->
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="home.html"><img src="images/logo/Plantify Logo.png" alt="" /></a>
+        <a href="home.html" class="text-logo">Plantify</a>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="home.hmtl#menu">Products</a>
+        <a href="home.html#about" id="">About</a>
+        <a href="home.html#contact">Testimonials</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="profile"><i class="bi bi-person"></i></a>
+        <a href="#" id="shopping-cart"><i class="bi bi-cart3"></i></a>
+        <a href="#" id="hamburger-menu"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Main Cart -->
+    <section class="cart">
+      <div class="header-cart">
+        <h2>Your cart items</h2>
+        <a href="products.html">Back to shopping</a>
+      </div>
+      <div class="cart-main">
+        <table>
+          <tr>
+            <th class="products-col">Product</th>
+            <th class="products-name header"></th>
+            <th class="price-col">Price</th>
+            <th class="quantity-col">Quantity</th>
+            <th class="total-col-header">Total</th>
+          </tr>
+          <tr>
+            <td class="products-col main"><img src="images/products/1.jpg" alt="" /></td>
+            <td class="products-name main">
+              <p class="name">Tumbuhan Hijau</p>
+              <a href="#">remove</a>
+            </td>
+            <td class="price-col main">$25.00</td>
+            <input type="hidden" onchange="subtotal()" class="iprice" name="iprice" value="25" />
+            <td class="quantity-col main">
+              <input class="qty-btn" name="iquantity" onchange="subtotal()" type="number" min="0" value="1" readonly />
+            </td>
+            <td class="total-col main">$25.00</td>
+          </tr>
+          <tr>
+            <td class="sub-col" colspan="2"></td>
+            <td class="sub-col" colspan="3">
+              <form action="payment-detail.html">
+                <div class="subtotal">
+                  <p>Total</p>
+                  <p class="gtotal-col">$25.00</p>
+                  <script>
+                    var gt = 0;
+                    var iprice = document.getElementsByName('iprice');
+                    var iquantity = document.getElementsByName('iquantity');
+                    var itotal = document.getElementsByClassName('total-col');
+                    var gtotal = document.getElementsByClassName('gtotal-col');
+
+                    function subtotal() {
+                      gt = 0;
+                      for (i = 0; i <= iprice.length; i++) {
+                        itotal[i].innerText = '$' + iprice[i].value * iquantity[i].value + '.00';
+                        total[i].value = itotal[i];
+                        gt += iprice[i].value * iquantity[i].value;
+                      }
+                      gtotal.innerText = '$' + gt + '.00';
+                    }
+                    subtotal();
+                  </script>
+
+                  <button type="submit" class="checkout">Checkout</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- End Main Cart -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-line">
+        <hr />
+      </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-col-logo">
+            <div class="footer-logo">
+              <div class="footer-logo-img">
+                <a href="#"><img src="images/logo/Plantify Transparan.png" alt="" /></a>
+                <a href="#">Plantify</a>
+              </div>
+              <p class="footer-logo-text">Your natural candle made for your home and for your wellness.</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">Products</a></p>
+              <p><a href="#">New season</a></p>
+              <p><a href="#">Most Searched</a></p>
+              <p><a href="#">Most Selled</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">About</a></p>
+              <p><a href="#">Help</a></p>
+              <p><a href="#">Shipping</a></p>
+              <p><a href="#">Affiliate</a></p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-content">
+              <p><a href="#" class="footer-col-header">Info</a></p>
+              <p><a href="#">Contact us</a></p>
+              <p><a href="#">Privacy Policies</a></p>
+              <p><a href="#">Terms & Conditions</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/cart.js"></script>
+  </body>
+</html>

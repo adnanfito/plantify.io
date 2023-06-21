@@ -1,0 +1,380 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  overflow: hidden;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.top-list-cart a {
+  color: #56b280 !important;
+}
+
+.top-list ul {
+  list-style-type: none;
+  padding-left: 4.3rem;
+}
+.top-list li {
+  display: inline-block;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.top-list a {
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.top-list i {
+  margin-left: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.top-list a:hover {
+  color: #56b280;
+}
+
+/* end previous-list */
+
+/* begin split-left  */
+
+.centered .header-contact {
+  padding-left: 5.5rem;
+  padding-top: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  /* line-height: 26px;   */
+  margin: 0;
+}
+
+/* begin payment method */
+
+.header-payment-method h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 26px;
+  margin: 3rem 2rem 1.5rem 5rem;
+}
+
+.payment-container {
+  width: 22%;
+  height: 6.5vh;
+  border-radius: 0.4rem;
+  background-image: linear-gradient(to right, #3cb371, #42c47a, #48d684, #4fe88d, #57fa96);
+  margin: 0 5rem;
+}
+
+.payment-card-box p,
+i {
+  display: inline;
+  margin-top: 0.7rem;
+  margin-left: 0.6rem;
+}
+
+.payment-card-box p {
+  margin-right: 0.3rem;
+}
+
+/* begin form payment */
+
+.input-field-cdn {
+  width: 29.5vw;
+  margin-left: 5rem;
+  margin-top: 0.2rem;
+}
+
+.input-field-holder {
+  margin-top: -0.8rem;
+  width: 29.5vw;
+  margin-left: 5rem;
+}
+
+.input-field-fullname {
+  margin-top: 0.8rem;
+  margin-left: -0.1rem;
+}
+
+.input-field-fullname input {
+  margin-left: 4.8rem;
+  margin-right: -4.6rem;
+  width: 12.25rem;
+
+  display: inline;
+}
+
+/* end form payment */
+
+/* end split-left */
+
+/* begin input field */
+.input-field {
+  padding-left: 5.5rem;
+  margin-top: -1rem;
+}
+
+.input-field input {
+  width: 32vw;
+  box-sizing: border-box;
+  border: 1px solid #8692a6 !important;
+  border-radius: 6px !important;
+}
+
+/* end input field */
+
+.container-remember {
+  padding-left: 5.5rem;
+  padding-top: 0.5rem;
+  /* background-color: aquamarine; */
+  padding-bottom: 5.5vh;
+}
+
+.centered h2 {
+  padding-left: 5.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.centered .header-shipping {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-left: 5.5rem;
+}
+
+/* begin inputfield nama */
+.input-field-name {
+  padding-left: 5.2rem;
+  margin-top: -0.1rem;
+}
+
+.input-field-name input {
+  width: 15.7vw;
+  box-sizing: border-box;
+  border: 1px solid #8692a6 !important;
+  border-radius: 6px !important;
+  display: inline;
+}
+
+/* end inputfield nama */
+.input-field-address {
+  padding-left: 5.2rem;
+  margin-top: 0.5rem;
+}
+
+.input-field-address input {
+  width: 10.2vw;
+  box-sizing: border-box;
+  border: 1px solid #8692a6 !important;
+  border-radius: 6px !important;
+  display: inline !important;
+}
+
+/* begin province */
+
+.input-field-address select {
+  width: 10.6vw;
+  height: 2.5vw;
+  box-sizing: border-box;
+  border: 1px solid #8692a6 !important;
+  border-radius: 6px !important;
+  display: inline !important;
+}
+
+/* end province */
+
+/* begin region */
+.input-field-region {
+  padding-left: 0.2rem;
+  margin-top: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.input-field-region select {
+  width: 32vw;
+  height: 2.5vw;
+  box-sizing: border-box;
+  border: 1px solid #8692a6 !important;
+  border-radius: 6px !important;
+  display: inline !important;
+  font-size: 0.98rem;
+}
+
+/* end region */
+.back-button a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #56b280;
+  padding-right: 12.5rem;
+}
+
+.back-button button {
+  width: 12vw;
+}
+
+/* end region */
+
+.back-button {
+  margin-left: -0.5rem;
+  margin-top: 5rem;
+}
+
+.back-button a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #56b280;
+  /* padding-right: 17rem; */
+  margin-left: 6rem;
+}
+
+.back-button button {
+  width: 12vw;
+}
+
+/* split right */
+
+.split-right {
+  width: 50%;
+}
+
+.item-content table,
+th,
+td {
+  border: 0px;
+}
+
+.item-content table {
+  width: 100%;
+}
+
+.image-plant {
+  width: 32%;
+}
+
+.image-plant img {
+  margin: 0.5rem 0 0 2rem;
+  border-radius: 1rem;
+  width: 10rem;
+}
+
+.text-item p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0rem;
+}
+
+.text-item .price {
+  /* margin-top: -0.1rem; */
+  color: #56b280;
+  /* margin-bottom: -5rem; */
+}
+
+/* .content {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    
+    .content img{
+      width: 15rem;
+      background-color: #F2F2F2;
+      margin: 3rem 0 0 3rem;
+    } */
+
+/* .header-product p{ */
+/* display: inline; */
+/* padding-left: 1.5rem;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    } */
+
+/* .header-product .price{
+      color: #56B280;
+    } */
+/* end split right */
+
+/* begin horizontal line */
+
+.detail-content {
+  /* width: 50%; */
+  margin: -1.2rem auto 0 auto;
+  /* margin-bottom: 5rem; */
+}
+
+.detail-content td {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+/* end horizontal line */
+
+/* begin payment final */
+
+.final-payment table,
+th,
+td {
+  border: 0px solid#000000;
+}
+
+.final-payment table {
+  width: 100%;
+}
+
+.subtotal {
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+  color: #000000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.total {
+  text-align: right;
+  padding-right: 12rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.all-total {
+  text-align: right;
+  padding-right: 12rem;
+  font-weight: 600;
+}
